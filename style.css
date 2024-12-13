@@ -1,0 +1,169 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 720px;
+  border-radius: 20px;
+  border: 10px solid #7998d1;
+  gap: 15px;
+  background-color: #7f9fdb;
+}
+
+/*추가 버튼 설정*/
+
+.btn_nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 450px;
+  height: 21px;
+}
+
+.btn_nav .but {
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  border: none;
+}
+
+.redBtn {
+  background-color: #ff6054;
+}
+
+.yellowBtn {
+  background-color: #fcbf2c;
+}
+
+.greenBtn {
+  background-color: #2bc747;
+}
+
+/*화면 설정*/
+
+.display {
+  width: 452px;
+  height: 105px;
+  border: 1px solid #7998d1;
+  background-color: #f5fafe;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 5px;
+}
+
+.dis_log {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.dis_view {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+  padding-right: 10px;
+}
+
+.num_log {
+  color: rgb(209, 209, 209);
+}
+
+.num_view {
+  font-size: 45px;
+}
+
+/*버튼 설정*/
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 450px;
+  height: 510px;
+  background-color: #6885bb;
+  border-radius: 10px;
+  box-shadow: rgba(74, 100, 127, 0.35) 0px -2px 6px 0px inset;
+}
+
+.btn_group {
+  list-style-type: none;
+  width: 450px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  width: 85px;
+  height: 85px;
+  border-radius: 90px;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grop1 {
+  background-color: #faf3b3;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.grop2 {
+  background-color: #ddeafe;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.grop3 {
+  background-color: #b3ccfa;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.grop4 {
+  background-color: #ddeafe;
+}
+.grop5 {
+  background-color: #b3ccfa;
+}
+
+.button:hover {
+  background: rgb(205, 205, 205);
+  border: 1px solid rgb(152, 152, 152);
+}
+
+.button:active {
+  background: #faf3b3;
+  border: 1px solid rgb(124, 145, 151);
+}
+
+.zero {
+  width: 195px;
+}
